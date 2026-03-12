@@ -1423,12 +1423,42 @@ footer {
             </div>
           </div>
         </div>
+        <!--sir robert -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">As a Computer Teacher, I joined this school to contribute to its mission of nurturing young minds. I aim to empower students with technology skills, inspire creativity, and uphold professionalism, helping them grow into responsible and capable individuals.</p>
+            <div class="testimonial-author">
+              <img class="author-avatar" src="pic/sirrobert.jpg" alt="Sir Robert">
+              <div class="author-info">
+                <strong>Robert Christian Rosales</strong>
+                <small>Computer Teacher</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--sir regie -->
+          <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">I came to this school to empower my vision and intelligence with what I have learned and apply it to my students with proper virtue and professionalism and to encore my carreer.</p>
+            <div class="testimonial-author">
+              <img class="author-avatar" src="pic/sirregie.jpg" alt="Sir Regie">
+              <div class="author-info">
+                <strong>Reginald Tegerero</strong>
+                <small>Science Teacher</small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Dots -->
       <div class="slider-dots">
         <button class="slider-dot active" data-slide="0"></button>
         <button class="slider-dot" data-slide="1"></button>
         <button class="slider-dot" data-slide="2"></button>
+        <button class="slider-dot" data-slide="3"></button>
+        <button class="slider-dot" data-slide="4"></button>
       </div>
     </div>
   </div>
@@ -1771,7 +1801,7 @@ let currentSlide = 0;
 let autoSlideInterval;
 
 function goToSlide(n) {
-  currentSlide = (n + 3) % 3;
+  currentSlide = (n + 5) % 5;
   track.style.transform = `translateX(-${currentSlide * 100}%)`;
   dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
 }
